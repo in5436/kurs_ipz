@@ -1,0 +1,11 @@
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\bin\Debug\Sheduler.exe.config
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\bin\Debug\Sheduler.exe
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\bin\Debug\Sheduler.pdb
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.csprojAssemblyReference.cache
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.Properties.Resources.resources
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.csproj.GenerateResource.cache
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.exe
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.pdb
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.FormAbout.resources
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.FormAuth.resources
+C:\Users\Администратор\source\repos\Labs\Sheduler\Sheduler\obj\Debug\Sheduler.Form1.resources

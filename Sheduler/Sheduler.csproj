@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{579CBB33-C9D4-477D-B6DB-E5C743993674}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sheduler</RootNamespace>
+    <AssemblyName>Sheduler</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\AuthorizationController.cs" />
+    <Compile Include="Controller\DivisionsController.cs" />
+    <Compile Include="Controller\DivisionTaskController.cs" />
+    <Compile Include="Controller\IPageController.cs" />
+    <Compile Include="Controller\IWrite2Controller.cs" />
+    <Compile Include="Controller\IWriteController.cs" />
+    <Compile Include="Controller\TaskAvgController.cs" />
+    <Compile Include="Controller\TasksController.cs" />
+    <Compile Include="Controller\UsersController.cs" />
+    <Compile Include="Controller\UsersGroupController.cs" />
+    <Compile Include="Controller\UsersUserGroupController.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuth.designer.cs">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDivisions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDivisions.designer.cs">
+      <DependentUpon>FormDivisions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDivisionsParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDivisionsParam.designer.cs">
+      <DependentUpon>FormDivisionsParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPager.cs" />
+    <Compile Include="FormTaskFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaskFilter.Designer.cs">
+      <DependentUpon>FormTaskFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTasks.designer.cs">
+      <DependentUpon>FormTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTasksParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTasksParam.designer.cs">
+      <DependentUpon>FormTasksParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersParam.designer.cs">
+      <DependentUpon>FormUsersParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Archives.cs" />
+    <Compile Include="ModelAbstract\ModelPage.cs" />
+    <Compile Include="ModelAbstract\ModelSelect.cs" />
+    <Compile Include="ModelAbstract\ModelWrite.cs" />
+    <Compile Include="Model\Divisions.cs" />
+    <Compile Include="Model\DivisionTask.cs" />
+    <Compile Include="Model\DivisionUser.cs" />
+    <Compile Include="Model\TaskAvg.cs" />
+    <Compile Include="Model\Tasks.cs" />
+    <Compile Include="Model\UserGroups.cs" />
+    <Compile Include="Model\Users.cs" />
+    <Compile Include="Model\UsersUserGroup.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticFormmethods.cs" />
+    <Compile Include="Utils\SqlFormer.cs" />
+    <Compile Include="Utils\SumFormer.cs" />
+    <Compile Include="View\IView.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuth.resx">
+      <DependentUpon>FormAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDivisions.resx">
+      <DependentUpon>FormDivisions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDivisionsParam.resx">
+      <DependentUpon>FormDivisionsParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaskFilter.resx">
+      <DependentUpon>FormTaskFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTasks.resx">
+      <DependentUpon>FormTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTasksParam.resx">
+      <DependentUpon>FormTasksParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersParam.resx">
+      <DependentUpon>FormUsersParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
